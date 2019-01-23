@@ -2,6 +2,9 @@
 calculator
 """
 
-def add(num1=0, num2=0):
+def add(*args):
     """ calculator """
-    return num1 + num2
+    answer = 0
+    for value in args:
+        answer += value
+    return answer
